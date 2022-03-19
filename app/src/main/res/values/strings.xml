@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AppPhi</string>
+    <string name="statement_info">Info Movimentação</string>
+    <string name="client_name">Nome</string>
+    <string name="statement_value">R$0,00</string>
+    <string name="pix">Pix</string>
+    <string name="statement_date">00/00</string>
+    <string name="your_balance">Seu saldo</string>
+    <string name="your_moves">Suas movimentações</string>
+    <string name="try_again">Tentar novamente</string>
+    <string name="i_know_something_went_wrong">Infelizmente algo deu errado...</string>
+    <string name="error_load_more_state_try_again">Erro ao tentar carregar a próxima página, tente novamente.</string>
+    <string name="receipt">Comprovante</string>
+    <string name="type_of_movement">Tipo de movimentação</string>
+    <string name="value">Valor</string>
+    <string name="to">Recebedor</string>
+    <string name="bank">Banco</string>
+    <string name="date_and_time">Data/Hora</string>
+    <string name="date_time">00/00/0000 - 00:00:00</string>
+    <string name="authentication">Autenticação</string>
+    <string name="authentication_model">123123123</string>
+    <string name="share">Compartilhar</string>
+    <string name="banking_institution">Instituição bancária</string>
+    <string name="your_account">Sua conta</string>
+    <string name="not_identified">Não identificado</string>
+    <string name="out">OUT</string>
+    <string name="an_error_has_occurred">Ocorreu um erro :(</string>
+    <string name="pix_out">PIX</string>
+    <string name="from">A partir de</string>
+</resources>

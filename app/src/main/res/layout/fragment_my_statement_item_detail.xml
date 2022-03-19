@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flipper_statement_item"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.myStatementItemDetail.MyStatementItemDetailFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar_my_statement_item_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <include
+        android:id="@+id/include_item_statement_detail"
+        layout="@layout/include_item_statement_detail"/>
+
+    <include
+        android:id="@+id/include_view_my_statement_error_state"
+        layout="@layout/include_view_my_statement_error_state"/>
+</ViewFlipper>

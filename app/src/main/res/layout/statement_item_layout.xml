@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/statement_layout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/color_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView_circle"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_baseline_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/view_line"
+        app:layout_constraintEnd_toEndOf="@+id/view_line"
+        app:layout_constraintStart_toStartOf="@+id/view_line"
+        app:layout_constraintTop_toTopOf="@+id/view_line" />
+
+    <TextView
+        android:id="@+id/textView_statementDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="@string/statement_info"
+        android:textColor="@color/color_black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView_circle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_clientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="@string/client_name"
+        app:layout_constraintStart_toStartOf="@+id/textView_statementDescription"
+        app:layout_constraintTop_toBottomOf="@+id/textView_statementDescription" />
+
+    <TextView
+        android:id="@+id/textView_statementAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="@string/statement_value"
+        android:textColor="@color/color_black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_clientName"
+        app:layout_constraintTop_toBottomOf="@+id/textView_clientName" />
+
+    <TextView
+        android:id="@+id/textView_statementPix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/color_cyan"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="2dp"
+        android:text="@string/pix"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView_statementDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="@string/statement_date"
+        android:textColor="@color/color_gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_statementPix" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

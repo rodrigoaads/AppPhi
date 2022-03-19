@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/statement_detail_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView_receipt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/receipt"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_receipt"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/color_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView_receipt" />
+
+            <TextView
+                android:id="@+id/textView_titleTypeOfMovement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/type_of_movement"
+                android:textColor="@color/color_black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_receipt" />
+
+            <TextView
+                android:id="@+id/textView_typeOfMovement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="@string/statement_info"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_titleTypeOfMovement"
+                app:layout_constraintTop_toBottomOf="@+id/textView_titleTypeOfMovement" />
+
+            <TextView
+                android:id="@+id/textView_titleValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/value"
+                android:textColor="@color/color_black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_typeOfMovement"
+                app:layout_constraintTop_toBottomOf="@+id/textView_typeOfMovement" />
+
+            <TextView
+                android:id="@+id/textView_Value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="@string/statement_value"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_titleValue"
+                app:layout_constraintTop_toBottomOf="@+id/textView_titleValue" />
+
+            <TextView
+                android:id="@+id/textView_titleTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/to"
+                android:textColor="@color/color_black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_Value"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Value" />
+
+            <TextView
+                android:id="@+id/textView_To"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="@string/client_name"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_titleTo"
+                app:layout_constraintTop_toBottomOf="@+id/textView_titleTo" />
+
+            <TextView
+                android:id="@+id/textView_titleFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/from"
+                android:textColor="@color/color_black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_To"
+                app:layout_constraintTop_toBottomOf="@+id/textView_To" />
+
+            <TextView
+                android:id="@+id/textView_From"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="@string/client_name"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_titleFrom"
+                app:layout_constraintTop_toBottomOf="@+id/textView_titleFrom" />
+
+            <TextView
+                android:id="@+id/textView_titleBankingInstitution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/banking_institution"
+                android:textColor="@color/color_black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_To"
+                app:layout_constraintTop_toBottomOf="@+id/textView_From" />
+
+            <TextView
+                android:id="@+id/textView_bankingInstitution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="@string/bank"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_titleBankingInstitution"
+                app:layout_constraintTop_toBottomOf="@+id/textView_titleBankingInstitution" />
+
+            <TextView
+                android:id="@+id/textView_titleDateAndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/date_and_time"
+                android:textColor="@color/color_black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_bankingInstitution"
+                app:layout_constraintTop_toBottomOf="@+id/textView_bankingInstitution" />
+
+            <TextView
+                android:id="@+id/textView_dateAndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="@string/date_time"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_titleDateAndTime"
+                app:layout_constraintTop_toBottomOf="@+id/textView_titleDateAndTime" />
+
+            <TextView
+                android:id="@+id/textView_titleAuthentication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/authentication"
+                android:textColor="@color/color_black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/textView_dateAndTime"
+                app:layout_constraintTop_toBottomOf="@+id/textView_dateAndTime" />
+
+            <TextView
+                android:id="@+id/textView_authentication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nunito_sans"
+                android:maxEms="17"
+                android:text="@string/authentication_model"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView_titleAuthentication"
+                app:layout_constraintTop_toBottomOf="@+id/textView_titleAuthentication" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_share"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="@string/share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

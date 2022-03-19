@@ -1,6 +1,6 @@
 # AppPhi (Android App) :bank:
 ## Project description 
-<p align="center">Technical test for a position as a mobile engineer at Phi company. [Access the test repository here](https://github.com/somosphi/desafio-android)</p>
+<p align="center">Technical test for a position as a mobile engineer at Phi company. Repository: https://github.com/somosphi/desafio-android </p>
 
 ## :warning: ATTENTION: Do not participate in the selection process, I developed the application for study purposes only.
 

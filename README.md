@@ -2,7 +2,7 @@
 ## Project description 
 <p align="center">Technical test for a position as a mobile engineer at Phi company. Repository: https://github.com/somosphi/desafio-android </p>
 
-## :warning: ATTENTION: Do not participate in the selection process, I developed the application for study purposes only.
+<p align="center">:warning: ATTENTION: Do not participate in the selection process, I developed the application for study purposes only.</p>
 
 ![AppPhiBG](https://user-images.githubusercontent.com/90936908/159134083-1d0ec7a1-4b4d-45ed-8bd8-65bc1fabf324.png)
 
